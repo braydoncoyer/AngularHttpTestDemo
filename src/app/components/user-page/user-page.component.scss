@@ -1,0 +1,11 @@
+.main-page {
+
+  margin: 20px 0;
+  &__item {
+    margin: 5px;
+
+    &-button {
+      margin: 15px 0;
+    }
+  }
+}

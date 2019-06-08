@@ -1,0 +1,19 @@
+<div class="main-page">
+  <h1>All Articles</h1>
+
+  <div class="main-page__item" *ngFor="let item of data">
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{item.title}}
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+
+      <mat-panel-description>
+       <b>Description:</b>
+         {{item.body}}
+      </mat-panel-description>
+      <button (click)="goToUserPage(item.userId)" mat-raised-button color="primary" class="main-page__item-button">Go to Author</button>
+    </mat-expansion-panel>
+  </div>
+</div>
